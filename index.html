@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title >Auto Loan Calculator</title>
+
+</head>
+<body>
+
+    <div class="container" >
+        <h1 class="title">Loan Calculator</h1>
+        <div class="form_div">
+
+            <form action=" "  >
+                <label for="">Car price</label>
+                <input class="car_price" type="number" placeholder="0$"  required>
+                <label for="">Down payment</label>
+                <input class="down_payment" type="number" placeholder="0$">
+                <label for="">How many year</label>
+                <input class="term"  type="number" placeholder="Year" required>
+                <label for="">Interest rate</label>
+                <input class="interest_rate" type="text"  placeholder="0%" required>
+                <button class="calculate_btn" type="submit" >Calculate</button>
+                <button class="reset_btn" type="submit" >Reset</button>
+            </form>
+        </div>
+
+        <div class="result_div">
+                <h1 class="principal_text"></h1>
+                <h1 class="monthly_payment"></h1>
+                <h1 class="total_amount_after_payment_text"></h1>
+                <h1 class="total_interest_text"></h1>
+                <h1 class="rate_text"></h1>
+        </div>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
