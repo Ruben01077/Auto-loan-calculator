@@ -15,6 +15,7 @@ let monthly_payment = document.querySelector(".monthly_payment")
 let reset_btn = document.querySelector(".reset_btn")
 let total_amount_after_payment_text = document.querySelector(".total_amount_after_payment_text")
 let total_interest_text = document.querySelector(".total_interest_text")
+let result_div = document.querySelector(".result_div")
 
 let car_price_value
 let down_payment_value 
@@ -23,14 +24,19 @@ let interest_rate_value
 
 calculate_btn.addEventListener("click", function set_values_local_storage() {
 
- 
+    
   localStorage.setItem("car_price_value", car_price.value);
   localStorage.setItem("down_payment", down_payment.value);
   localStorage.setItem("term", term.value);
   localStorage.setItem("interest_rate", interest_rate.value);
 
 
-});
+      
+
+
+ 
+
+})
 
 reset_btn.addEventListener("click", function(){
 
@@ -40,15 +46,17 @@ reset_btn.addEventListener("click", function(){
 
 function get_values_from_storage(){ 
 
-    car_price.value = Number(localStorage.getItem("car_price_value"));
-    down_payment.value = Number(localStorage.getItem("down_payment"));
-    term.value = Number(localStorage.getItem("term"));
-    interest_rate.value = Number(localStorage.getItem("interest_rate"));
+    // car_price.value = Number(localStorage.getItem("car_price_value"));
+    // down_payment.value = Number(localStorage.getItem("down_payment"));
+    // term.value = Number(localStorage.getItem("term"));
+    // interest_rate.value = Number(localStorage.getItem("interest_rate"));
 
 car_price_value = Number(localStorage.getItem("car_price_value"));
 down_payment_value = Number(localStorage.getItem("down_payment"));
 term_value = Number(localStorage.getItem("term"));
 interest_rate_value = Number(localStorage.getItem("interest_rate"));
+
+
 
 }
 

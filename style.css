@@ -16,8 +16,8 @@ body{
    font-size: 2rem;
    color: rgb(238, 166, 11);   
    flex-direction: column;
-   filter:drop-shadow(0px 0px 100px rgba(255, 255, 0, 0.356))
-   
+   filter:drop-shadow(0px 0px 100px rgba(255, 255, 0, 0.356));
+   padding-bottom: 2rem;
 
 
 }
@@ -57,9 +57,7 @@ input, select{
 
 }
 
-input:hover{
-    
-}
+
 
 .calculate_btn, .reset_btn{
     margin-top: 2rem;
@@ -85,4 +83,5 @@ input:hover{
 
 
 }
+
 
