@@ -73,6 +73,7 @@ function payment_calculator(){
 let total
 
 
+
 payment_calculator()
 
 principal_text.innerHTML = "Principal is $" + principal
@@ -80,6 +81,7 @@ monthly_payment.innerHTML = "Monthly payment is $" + result
 
 let  total_interest = (result * number_of_payment) - car_price_value 
 let total_cost = result * number_of_payment
+
 
 if (term_value <= 1 ){
 
